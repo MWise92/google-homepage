@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-    <head>...</head>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="all"/> 
+
+    <head>
+        <title>Google</title>
+    </head>
     <body>
     <div>
-        <img alt="Google" height="92" id="hplogo" src="/images/branding/googlelogo/2x/
-        googlelogo_color_272x92dp.png" srcset="/images/
-        branding/googlelogo/1x/googlelogo_color_272x92dp.png
-        1x, /images/branding/googlelogo/2x/
-        googlelogo_color_272x92dp.png 2x" style="padding-top:
-        109px" width="272" data-atf="1"> = $0
+        <img style="display:block; margin:0 auto; padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>
+    <div id="searchform">
+        <form style="-webkit-user-select:none; display:block; margin:auto; padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);" action="http://www.google.com/search" method="get">
+            <input type="text" name="q"/>
+            <input type="submit" value="search" />
+        </form>
     </body>
 </html>
