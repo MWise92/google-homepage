@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 
-<link href="css/reset.css" rel="stylesheet" type="text/css" media="all"/>
-<link href="css/main.css" rel="stylesheet" type="text/css" media="all"/> 
-
     <head>
         <title>Google</title>
     </head>
     <body>
-    <div>
-        <img style="display:block; margin:0 auto; padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <div>
+            <style>
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li {
+                    float: left;
+                }
+
+                a {
+                    display: block;
+                    padding: 8px;
+                }
+
+            </style>
+            <ul>
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="news.asp">News</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+                <li><a href="about.asp">About</a></li>
+            </ul>
+        </div>
+
+    <div class="content" id="main">
+        <span class="logo" id="body">
+                <div>
+                    <style>
+                        #img {height:233px;margin-top:89px;}@media only screen and (max-height:768px;){#img {margin-top:47px}}
+                    </style>
+                    <img alt="Google" height="92" id="glogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="padding-top:109px" width="272">
+                </div>
+                <div style="height:59px"></div>
+                <div id="def" style="margin-top:12px">
+                </div>
+        </span>
     </div>
-    <div id="searchform">
-        <form style="-webkit-user-select:none; display:block; margin:auto; padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);" action="http://www.google.com/search" method="get">
-            <input type="text" name="q"/>
-            <input type="submit" value="search" />
-        </form>
+    <center>
+        <div id="searchform">
+            <form action="http://www.google.com/search" method="get">
+                <input type="text" name="q"/>
+                <input type="submit" value="search" />
+            </form>
+        </div>
+    </center>
     </body>
 </html>
