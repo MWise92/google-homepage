@@ -29,27 +29,49 @@
                 <li><a href="about.asp">About</a></li>
             </ul>
         </div>
-
-    <div class="content" id="main">
-        <span class="logo" id="body">
-                <div>
-                    <style>
-                        #img {height:233px;margin-top:89px;}@media only screen and (max-height:768px;){#img {margin-top:47px}}
-                    </style>
-                    <img alt="Google" height="92" id="glogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="padding-top:109px" width="272">
-                </div>
-                <div style="height:59px"></div>
-                <div id="def" style="margin-top:12px">
-                </div>
-        </span>
-    </div>
-    <center>
+        <div>
+            <style>
+                img {
+                    margin-top: 100px;
+                    margin-left: 285px;
+                }
+            </style>
+            <img alt="Google" height="92" id="glogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
         <div id="searchform">
-            <form action="http://www.google.com/search" method="get">
+            <style>
+                form {
+                    margin-top: 20px;
+                    margin-left: 550px;
+                    display: flex;
+                    border: 1px;
+                    border-radius: 16px;
+                }
+            </style>
+            <form action="/search" style="overflow:visible" method="GET" role="search" action="https://www.google.com/search">
                 <input type="text" name="q"/>
                 <input type="submit" value="search" />
             </form>
         </div>
-    </center>
+        <div>
+            <style>
+                .footer {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: #f2f2f2;
+                    color: white;
+                    text-align: center;
+                }
+            </style>
+            <div class="footer">
+                <ul>
+                    <li> <a href="advertising.asp">Advertising</a></li>
+                    <li> <a href="business.asp">Business</a></li>
+                    <li> <a href="howsearchworks.asp">How Search Works</a></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
