@@ -3,3 +3,4 @@ This is my google homepage exercise from The Odin Project course. It's just the 
     centering an image
     building a search bar
     building a sticky footer
+Took a crack at it myself based on what I've learned so far from TOP then used dev tools on Google page and youtube videos. Also used WE3 Schools online. 
